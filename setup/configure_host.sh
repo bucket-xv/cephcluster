@@ -1,5 +1,6 @@
 
 sudo apt update
+mkdir -p /var/lib/ceph
 # mkfs.ext4 /dev/sda4
 # mkdir /mnt/sda4
 # mount --bind /var/lib/ceph /mnt/sda4
