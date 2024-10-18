@@ -1,40 +1,20 @@
-#!/bin/bash
+sudo -i
+apt update
+# mkfs.ext4 /dev/sda4
+# mkdir /mnt/sda4
+# mount --bind /var/lib/ceph /mnt/sda4
+mount -t auto -v /dev/sda4 /var/lib/ceph
+# mv /mnt/sda4/* /var/lib/ceph
+umount /mnt/sda4
 
-# This is a script for Ubuntu 18
-sudo apt update -y
-sudo apt-get install gcc g++ make cmake git autogen autoconf automake yasm nasm libtool libboost-all-dev -y
-sudo apt-get install -y help2man
-
-cd ~/dRAID4Docker/
-git submodule update --init --recursive
-
-# These are to install the isa-l library
-cd submodules/isa-l
-./autogen.sh
-./configure
-make
-sudo make install
-cd ../..
-
-# These are to install the spdk library
-cd ../submodules/spdk
-git submodule update --init
-sudo ./scripts/pkgdep.sh
-./configure
-make
-cd ../..
-
-# install dependencies of Linux RAID
-# sudo apt update -y
-# sudo apt install nvme-cli -y
-# sudo apt install mdadm -y
-# sudo apt install libaio-dev -y
-# sudo modprobe nvme-rdma
-# sudo mkdir /raid
-# install FIO
-# git clone https://github.com/axboe/fio
-# cd fio
-# make
-# sudo make install
-# sudo ldconfig
-cd ..
+sudo apt update
+CEPH_RELEASE=18.2.4
+curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
+chmod +x cephadm
+sudo ./cephadm add-repo --release Reef
+sudo ./cephadm install
+sudo apt install python3.10
+sudo cephadm add-repo --release reef
+sudo cephadm install ceph-common
+sudo cephadm bootstrap --mon-ip 128.105.145.216 --cleanup-on-failure --allow-fqdn-hostname
+exit
