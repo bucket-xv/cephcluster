@@ -20,13 +20,13 @@ scp_to_machine() {
 
 python parse_manifest.py manifest.xml ip_addr_host.txt ip_addrs_server.txt
 
-while read -u10 line
+while read -u10 -r line name
 do
   scp_to_machine "$line"
 done 10< ip_addr_host.txt
 
 # this is to setup the servers
-while read -u10 line
+while read -u10 -r line name
 do
   scp_to_machine "$line"
 done 10< ip_addrs_server.txt

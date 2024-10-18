@@ -11,7 +11,7 @@ if __name__ == '__main__':
     ipv4_addrs = []
     for child in root.iter():
         if child.tag.endswith('host'):
-            ipv4_addrs.append(child.get('ipv4'))
+            ipv4_addrs.append(child.get('ipv4')+' '+child.get('name'))
             
     print(ipv4_addrs)
     host_file.write(ipv4_addrs[0] + '\n')
