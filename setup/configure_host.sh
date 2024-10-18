@@ -17,3 +17,4 @@ sudo cephadm add-repo --release reef
 sudo cephadm install ceph-common
 sudo cephadm bootstrap --mon-ip 128.105.145.216 --cleanup-on-failure --allow-fqdn-hostname
 sudo ceph orch apply osd --all-available-devices
+sudo ceph osd pool create ecpool erasure

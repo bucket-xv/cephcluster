@@ -1,3 +1,4 @@
-128.105.145.220 host.bucketxv-221991.dstore-pg0.wisc.cloudlab.us
-128.105.145.205 server-2.bucketxv-221991.dstore-pg0.wisc.cloudlab.us
-128.105.145.215 server-3.bucketxv-221991.dstore-pg0.wisc.cloudlab.us
+128.105.145.232
+128.105.145.229
+128.105.145.228
+128.105.145.226

@@ -1,1 +1,0 @@
-sudo ceph osd pool create ecpool erasure
