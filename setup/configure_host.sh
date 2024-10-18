@@ -8,7 +8,6 @@ sudo mount -t auto -v /dev/sda4 /var/lib/ceph
 # mv /mnt/sda4/* /var/lib/ceph
 # sudo umount /mnt/sda4
 
-sudo apt update
 CEPH_RELEASE=18.2.4 sudo curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
 sudo chmod +x cephadm
 sudo ./cephadm add-repo --release Reef
