@@ -21,10 +21,10 @@ be installed via `configure_server.sh`
 git clone git@github.com:bucket-xv/cephcluster.git
 cd cephcluster/setup
 ./configure_host.sh
+./configure_server.sh
 ```
-
-3. For debug reason maybe you don't want to set up every time you update the repo. In this case you only need to run the following command to **avoid scp to ip_addr files** and accelerate this process.
-```bash
-# Make sure you are under setup/
-./setup_all_nodes.sh manifest.xml <your_CloudLab_username> -o
+4. Consider creating a pool?
+    
+```Bash
+./create_ecpool.sh
 ```
