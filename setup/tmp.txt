@@ -1,0 +1,3 @@
+128.105.145.229 server-1.BucketXv-224320.dstore-PG0.wisc.cloudlab.us
+128.105.145.228 server-2.BucketXv-224320.dstore-PG0.wisc.cloudlab.us
+128.105.145.226 server-3.BucketXv-224320.dstore-PG0.wisc.cloudlab.us
