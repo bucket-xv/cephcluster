@@ -37,7 +37,6 @@ int main(int argc, char **argv)
         rados_shutdown(cluster);
         exit(1);
     }
-
     FILE *file;
     long filesize;
     char *buffer;
@@ -63,23 +62,15 @@ int main(int argc, char **argv)
         fclose(file);
         return 1;
     }
-
-    // Read the file into the buffer
-    fread(buffer, 1, filesize, file);
-    buffer[filesize] = '\0'; // Null-terminate the string
-
-    // Close the file
-    fclose(file);
-
-    err = rados_write_full(io, "greeting3", buffer, filesize);
+    err = rados_read(io, "greeting3", buffer, filesize, 0);
     if (err < 0)
     {
-        fprintf(stderr, "%s: cannot write pool %s: %s\n", argv[0], poolname, strerror(-err));
+        fprintf(stderr, "%s: cannot read pool %s: %s\n", argv[0], poolname, strerror(-err));
         rados_ioctx_destroy(io);
         rados_shutdown(cluster);
         exit(1);
     }
-
+    printf("%c %ld\n", buffer[0], filesize);
     rados_ioctx_destroy(io);
     rados_shutdown(cluster);
 }
