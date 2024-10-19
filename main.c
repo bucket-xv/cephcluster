@@ -29,7 +29,7 @@ int main(int argc, char **argv)
     }
 
     rados_ioctx_t io;
-    char *poolname = "ecpool";
+    char *poolname = "ecpool2";
     err = rados_ioctx_create(cluster, poolname, &io);
     if (err < 0)
     {
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
     // Close the file
     fclose(file);
 
-    err = rados_write_full(io, "greeting3", buffer, filesize);
+    err = rados_write_full(io, "greeting", buffer, filesize);
     if (err < 0)
     {
         fprintf(stderr, "%s: cannot write pool %s: %s\n", argv[0], poolname, strerror(-err));

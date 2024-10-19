@@ -1,7 +1,7 @@
 import random
 
 # Define the number of random numbers you want to generate
-num_random_numbers = 200000
+num_random_numbers = 2000000
 
 # Define the range for the random numbers
 range_start = 1

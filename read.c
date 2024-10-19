@@ -29,7 +29,7 @@ int main(int argc, char **argv)
     }
 
     rados_ioctx_t io;
-    char *poolname = "ecpool";
+    char *poolname = "ecpool2";
     err = rados_ioctx_create(cluster, poolname, &io);
     if (err < 0)
     {
@@ -62,7 +62,7 @@ int main(int argc, char **argv)
         fclose(file);
         return 1;
     }
-    err = rados_read(io, "greeting3", buffer, filesize, 0);
+    err = rados_read(io, "greeting", buffer, filesize, 0);
     if (err < 0)
     {
         fprintf(stderr, "%s: cannot read pool %s: %s\n", argv[0], poolname, strerror(-err));
