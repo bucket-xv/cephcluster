@@ -11,23 +11,19 @@ be installed via `configure_server.sh`
 python parse_manifest.py manifest.xml ip_addr_host.txt ip_addrs_server.txt
 git commit -a -m "Change ip"
 git push
-```
-
-2. Run the following command to setup
-```Bash
-# Make sure you are under setup/
 ./setup_all_nodes.sh BucketXv
 ```
 
-3. ssh to host machine and git clone and operate
+2. ssh to host machine and git clone and operate
 
 ```Bash
+tmux
 git clone git@github.com:bucket-xv/cephcluster.git
 cd cephcluster/setup
 ./configure_host.sh
 ./configure_server.sh
 ```
-4. Consider creating a pool?
+3. Consider creating a pool?
     
 ```Bash
 ./create_ecpool.sh
