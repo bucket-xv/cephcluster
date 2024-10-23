@@ -1,159 +1,159 @@
 <rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/request.xsd" type="request">
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-4" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g2-011132" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929320">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-4" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g1-030621" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929425">
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://www.emulab.net/protogeni/jacks-stable/images/server.svg"/>
     <sliver_type name="raw-pc">
-      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"/>
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD"/>
     </sliver_type>
-    <hardware_type name="c220g2"/>
+    <hardware_type name="c220g1"/>
     <services>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="kyleshu"/>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="zhurd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="gjghfd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="Naiqian"/>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="liufy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="Tzechinh"/>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="pkuscc"/>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="liuhy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="BucketXv"/>
-      <login authentication="ssh-keys" hostname="c220g2-011132.wisc.cloudlab.us" port="22" username="hxlim"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="kyleshu"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="zhurd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="gjghfd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="Naiqian"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="liufy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="Tzechinh"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="pkuscc"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="liuhy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="BucketXv"/>
+      <login authentication="ssh-keys" hostname="c220g1-030621.wisc.cloudlab.us" port="22" username="hxlim"/>
       <emulab:console server="boss.wisc.cloudlab.us"/>
       <emulab:recovery available="true"/>
       <emulab:powercycle available="true"/>
       <emulab:imageable available="true"/>
     </services>
-    <interface client_id="interface-1" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011132:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929324" mac_address="90e2baac1634">
+    <interface client_id="interface-1" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030621:eth3" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929430" mac_address="90e2ba24d115">
       <ip address="10.10.1.2" type="ipv4" netmask="255.255.255.0"/>
     </interface>
-    <emulab:vnode name="c220g2-011132" hardware_type="c220g2"/>
-    <host name="server-4.CephBalancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.135"/>
+    <emulab:vnode name="c220g1-030621" hardware_type="c220g1"/>
+    <host name="server-4.Balancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.194"/>
   </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-5" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g2-011126" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929317">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-5" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g1-030627" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929426">
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://www.emulab.net/protogeni/jacks-stable/images/server.svg"/>
     <sliver_type name="raw-pc">
-      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"/>
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD"/>
     </sliver_type>
-    <hardware_type name="c220g2"/>
+    <hardware_type name="c220g1"/>
     <services>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="kyleshu"/>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="zhurd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="gjghfd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="Naiqian"/>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="liufy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="Tzechinh"/>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="pkuscc"/>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="liuhy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="BucketXv"/>
-      <login authentication="ssh-keys" hostname="c220g2-011126.wisc.cloudlab.us" port="22" username="hxlim"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="kyleshu"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="zhurd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="gjghfd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="Naiqian"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="liufy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="Tzechinh"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="pkuscc"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="liuhy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="BucketXv"/>
+      <login authentication="ssh-keys" hostname="c220g1-030627.wisc.cloudlab.us" port="22" username="hxlim"/>
       <emulab:console server="boss.wisc.cloudlab.us"/>
       <emulab:recovery available="true"/>
       <emulab:powercycle available="true"/>
       <emulab:imageable available="true"/>
     </services>
-    <interface client_id="interface-0" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011126:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929323" mac_address="90e2bab3bd68">
+    <interface client_id="interface-0" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030627:eth3" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929429" mac_address="90e2ba949c7d">
       <ip address="10.10.1.1" type="ipv4" netmask="255.255.255.0"/>
     </interface>
-    <emulab:vnode name="c220g2-011126" hardware_type="c220g2"/>
-    <host name="server-5.CephBalancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.129"/>
+    <emulab:vnode name="c220g1-030627" hardware_type="c220g1"/>
+    <host name="server-5.Balancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.200"/>
   </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-1" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g2-011025" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929318">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-1" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g1-030807" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929423">
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://www.emulab.net/protogeni/jacks-stable/images/server.svg"/>
     <sliver_type name="raw-pc">
-      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"/>
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD"/>
     </sliver_type>
-    <hardware_type name="c220g2"/>
+    <hardware_type name="c220g1"/>
     <services>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="kyleshu"/>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="zhurd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="gjghfd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="Naiqian"/>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="liufy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="Tzechinh"/>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="pkuscc"/>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="liuhy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="BucketXv"/>
-      <login authentication="ssh-keys" hostname="c220g2-011025.wisc.cloudlab.us" port="22" username="hxlim"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="kyleshu"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="zhurd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="gjghfd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="Naiqian"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="liufy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="Tzechinh"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="pkuscc"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="liuhy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="BucketXv"/>
+      <login authentication="ssh-keys" hostname="c220g1-030807.wisc.cloudlab.us" port="22" username="hxlim"/>
       <emulab:console server="boss.wisc.cloudlab.us"/>
       <emulab:recovery available="true"/>
       <emulab:powercycle available="true"/>
       <emulab:imageable available="true"/>
     </services>
-    <interface client_id="interface-2" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011025:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929325" mac_address="90e2bab3b9d0">
+    <interface client_id="interface-2" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030807:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929431" mac_address="90e2ba814914">
       <ip address="10.10.1.3" type="ipv4" netmask="255.255.255.0"/>
     </interface>
-    <emulab:vnode name="c220g2-011025" hardware_type="c220g2"/>
-    <host name="server-1.CephBalancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.99"/>
+    <emulab:vnode name="c220g1-030807" hardware_type="c220g1"/>
+    <host name="server-1.Balancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.210"/>
   </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-2" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g2-011006" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929316">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-2" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g1-030605" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929424">
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://www.emulab.net/protogeni/jacks-stable/images/server.svg"/>
     <sliver_type name="raw-pc">
-      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"/>
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD"/>
     </sliver_type>
-    <hardware_type name="c220g2"/>
+    <hardware_type name="c220g1"/>
     <services>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="kyleshu"/>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="zhurd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="gjghfd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="Naiqian"/>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="liufy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="Tzechinh"/>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="pkuscc"/>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="liuhy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="BucketXv"/>
-      <login authentication="ssh-keys" hostname="c220g2-011006.wisc.cloudlab.us" port="22" username="hxlim"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="kyleshu"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="zhurd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="gjghfd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="Naiqian"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="liufy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="Tzechinh"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="pkuscc"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="liuhy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="BucketXv"/>
+      <login authentication="ssh-keys" hostname="c220g1-030605.wisc.cloudlab.us" port="22" username="hxlim"/>
       <emulab:console server="boss.wisc.cloudlab.us"/>
       <emulab:recovery available="true"/>
       <emulab:powercycle available="true"/>
       <emulab:imageable available="true"/>
     </services>
-    <interface client_id="interface-8" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011006:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929327" mac_address="90e2bab3bd04">
+    <interface client_id="interface-8" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030605:eth3" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929433" mac_address="90e2ba84d83d">
       <ip address="10.10.1.5" type="ipv4" netmask="255.255.255.0"/>
     </interface>
-    <emulab:vnode name="c220g2-011006" hardware_type="c220g2"/>
-    <host name="server-2.CephBalancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.80"/>
+    <emulab:vnode name="c220g1-030605" hardware_type="c220g1"/>
+    <host name="server-2.Balancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.178"/>
   </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-3" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g2-011127" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929319">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server-3" component_manager_id="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" exclusive="true" component_id="urn:publicid:IDN+wisc.cloudlab.us+node+c220g1-030615" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929422">
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://www.emulab.net/protogeni/jacks-stable/images/server.svg"/>
     <sliver_type name="raw-pc">
-      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"/>
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD"/>
     </sliver_type>
     <services>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="kyleshu"/>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="zhurd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="gjghfd"/>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="Naiqian"/>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="liufy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="Tzechinh"/>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="pkuscc"/>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="liuhy"/>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="BucketXv"/>
-      <login authentication="ssh-keys" hostname="c220g2-011127.wisc.cloudlab.us" port="22" username="hxlim"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="kyleshu"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="zhurd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="gjghfd"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="Naiqian"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="liufy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="Tzechinh"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="pkuscc"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="liuhy"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="BucketXv"/>
+      <login authentication="ssh-keys" hostname="c220g1-030615.wisc.cloudlab.us" port="22" username="hxlim"/>
       <emulab:console server="boss.wisc.cloudlab.us"/>
       <emulab:recovery available="true"/>
       <emulab:powercycle available="true"/>
       <emulab:imageable available="true"/>
     </services>
-    <hardware_type name="c220g2"/>
-    <interface client_id="interface-7" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011127:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929326" mac_address="90e2bab32214">
+    <hardware_type name="c220g1"/>
+    <interface client_id="interface-7" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030615:eth3" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929432" mac_address="90e2baae6d35">
       <ip address="10.10.1.4" type="ipv4" netmask="255.255.255.0"/>
     </interface>
-    <emulab:vnode name="c220g2-011127" hardware_type="c220g2"/>
-    <host name="server-3.CephBalancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.130"/>
+    <emulab:vnode name="c220g1-030615" hardware_type="c220g1"/>
+    <host name="server-3.Balancer.dstore-PG0.wisc.cloudlab.us" ipv4="128.105.145.188"/>
   </node>
-  <link client_id="link-0" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929322" vlantag="1142">
+  <link client_id="link-0" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929428" vlantag="1162">
     <link_type name="lan"/>
     <interswitch xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1" allow="no"/>
-    <interface_ref client_id="interface-0" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011126:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929323"/>
-    <interface_ref client_id="interface-1" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011132:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929324"/>
-    <interface_ref client_id="interface-2" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011025:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929325"/>
-    <interface_ref client_id="interface-7" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011127:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929326"/>
-    <interface_ref client_id="interface-8" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g2-011006:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929327"/>
+    <interface_ref client_id="interface-0" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030627:eth3" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929429"/>
+    <interface_ref client_id="interface-1" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030621:eth3" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929430"/>
+    <interface_ref client_id="interface-2" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030807:eth2" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929431"/>
+    <interface_ref client_id="interface-7" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030615:eth3" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929432"/>
+    <interface_ref client_id="interface-8" component_id="urn:publicid:IDN+wisc.cloudlab.us+interface+c220g1-030605:eth3" sliver_id="urn:publicid:IDN+wisc.cloudlab.us+sliver+929433"/>
     <component_manager name="urn:publicid:IDN+wisc.cloudlab.us+authority+cm"/>
-    <emulab:switchpath>leafsw-hp5930-8s10544:spinesw-hp5930-8s10642 leafsw-hp5930-8s10744:spinesw-hp5930-8s10642</emulab:switchpath>
+    <emulab:switchpath>leafsw-hp5930-8s10843:spinesw-hp5930-8s10642 leafsw-hp5930-8s10944:spinesw-hp5930-8s10642</emulab:switchpath>
   </link>
   <rspec_tour xmlns="http://www.protogeni.net/resources/rspec/ext/apt-tour/1">
-    <description xmlns="" type="markdown">Five nodes for a test Ceph cluster</description>
+    <description xmlns="" type="markdown">Five ubuntu22 nodes for a test Ceph cluster on squid release</description>
   </rspec_tour>
-  <emulab:portal name="cloudlab" url="https://www.cloudlab.us/status.php?uuid=dc1131ac-9116-11ef-af1a-e4434b2381fc" project="dStore" experiment="CephBalancer" sequence="1729671289"/>
+  <emulab:portal name="cloudlab" url="https://www.cloudlab.us/status.php?uuid=b220d953-9145-11ef-af1a-e4434b2381fc" project="dStore" experiment="Balancer" sequence="1729691405"/>
   <rs:site_info xmlns:rs="http://www.protogeni.net/resources/rspec/ext/site-info/1">
     <rs:location country="US" latitude="43.0667" longitude="89.4000"/>
   </rs:site_info>
