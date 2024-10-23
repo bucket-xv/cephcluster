@@ -15,6 +15,7 @@ scp_to_machine() {
   ip_addr=$1
 
   echo "scp manifests to $ip_addr"
+  ssh -o StrictHostKeyChecking=no $username@$ip_addr "echo Hello!"
   scp ~/.ssh/id_ed25519 "$username@$ip_addr:~/.ssh/"
 }
 
