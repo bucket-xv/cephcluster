@@ -11,7 +11,8 @@ cd ~
 sudo apt install docker.io software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt install python3.10 -y
-CEPH_RELEASE=18.2.4 
+# CEPH_RELEASE=18.2.4 
+CEPH_RELEASE=19.2.0
 sudo curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
 sudo chmod +x cephadm
 sudo ./cephadm add-repo --release reef
