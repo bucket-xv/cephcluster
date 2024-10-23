@@ -6,8 +6,12 @@ be installed via `configure_server.sh`
 
 ## Setup the Testbed
 
-1. Copy all the host and server IP addresses to `ip_addr_host.txt` and `ip_addrs_server.txt`. We plan to extract the IP addresses from `manifest.xml` in the future, but currently we have to manually write ip addresses to these two files.\
-**Important Note!!!!** There **must** be an empty line after all the IP addresses.\
+1. Copy the manifest to manifest.xml and execute the following command
+```Bash
+python parse_manifest.py manifest.xml ip_addr_host.txt ip_addrs_server.txt
+git commit -a -m "Change ip"
+git push
+```
 
 2. Run the following command to setup
 ```Bash
