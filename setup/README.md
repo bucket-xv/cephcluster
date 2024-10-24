@@ -26,3 +26,9 @@ cd cephcluster/setup
 # ./create_ecpool.sh
 # ./balancer_read.sh
 ```
+
+3. use the host machine
+
+```Bash
+./configure_cli.sh
+```
