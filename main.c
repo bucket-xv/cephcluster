@@ -29,7 +29,7 @@ int main(int argc, char **argv)
     }
 
     rados_ioctx_t io;
-    char *poolname = "ecpool2";
+    char *poolname = "ecpool";
     err = rados_ioctx_create(cluster, poolname, &io);
     if (err < 0)
     {
