@@ -20,11 +20,9 @@ git push
 tmux
 git clone git@github.com:bucket-xv/cephcluster.git
 cd cephcluster/setup
-./configure_host.sh
-./configure_server.sh
-```
-3. Consider creating a pool?
-    
-```Bash
-./create_ecpool.sh
+./setup_all.sh
+# ./configure_host.sh
+# ./configure_server.sh
+# ./create_ecpool.sh
+# ./balancer_read.sh
 ```
