@@ -25,5 +25,5 @@ sudo cephadm install ceph-base
 # cephadm bootstrap
 cd ~/cephcluster/setup
 host=$(head -n 1 ip_addr_host.txt)
-sudo cephadm bootstrap --mon-ip $host --cleanup-on-failure --allow-fqdn-hostname
+sudo cephadm bootstrap --mon-ip $host --allow-fqdn-hostname
 sudo ceph orch apply osd --all-available-devices
